@@ -1,6 +1,6 @@
-﻿namespace ComboBoxWithPicture
+﻿namespace ComboBoxWithPictureDemo
 {
-    partial class Form1
+    partial class FrmMain
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -28,13 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.myComboBox1 = new global::ComboBoxWithPicture.ComboBoxWithPicture();
+            this.SuspendLayout();
+            // 
+            // myComboBox1
+            // 
+            this.myComboBox1.FormattingEnabled = true;
+            this.myComboBox1.Location = new System.Drawing.Point(196, 62);
+            this.myComboBox1.Name = "myComboBox1";
+            this.myComboBox1.Size = new System.Drawing.Size(121, 20);
+            this.myComboBox1.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.myComboBox1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private ComboBoxWithPicture.ComboBoxWithPicture myComboBox1;
     }
 }
 
